@@ -11,7 +11,7 @@
 	<?php 
 	session_start();
 	if($_SESSION['status']!="login"){
-		header("login.php?pesan=belum_login");
+		header("location:login.php?pesan=belum_login");
 	}
 	?>
  
@@ -25,3 +25,4 @@
  
 </body>
 </html>
+

@@ -11,8 +11,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<title>Kampus Indoensia</title>
     </head>
     <body>
@@ -22,6 +22,7 @@
                 <div>
                     <a href="index.php" class="nav__logo">Kampus Indonesia</a>
                 </div>
+
             </nav>
         </header>
 

@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
 		
 
@@ -44,7 +44,7 @@
 				<input type="password" name="password" placeholder="Masukkan password">
 			</div>			
 			<div>
-				<input class="buttonLogin"type="submit" value="Login" class="tombol">
+				<input class="btn btn-primary" type="submit" value="Login" class="tombol">
 			</div>
 		</form>
 			</div>
