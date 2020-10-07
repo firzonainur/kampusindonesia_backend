@@ -13,14 +13,14 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="index.php" class="nav__logo">Kampus Indonesia</a>
+                    <a href="index.php" >Kampus Indonesia</a>
                 </div>
 
             </nav>
         </header>
 		<body>
 			<div class="wrapper">
-				<h1>Login</h1>
+				<h1>Login</h1>	
 				<?php 
 					if(isset($_GET['pesan'])){
 					if($_GET['pesan'] == "gagal"){
@@ -37,11 +37,11 @@
 				<form action="koneksi/cek_login.php" method="post" onSubmit="return validasi()">
 			<div>
 				<label>Username:</label>
-				<input type="text" name="username" placeholder="Masukkan username">
+				<input type="text" name="username" placeholder="Masukkan username" required="required">
 			</div>
 			<div>
 				<label>Password:</label>
-				<input type="password" name="password" placeholder="Masukkan password">
+				<input type="password" name="password" placeholder="Masukkan password" required="required">
 			</div>			
 			<div>
 				<input class="btn btn-primary" type="submit" value="Login" class="tombol">
@@ -51,18 +51,6 @@
 		</body>
     </body>
 	
-	<script type="text/javascript">
-	function validasi() {
-		var username = document.getElementById("username").value;
-		var password = document.getElementById("password").value;		
-		if (username != "" && password!="") {
-			return true;
-		}else{
-			alert('Username dan Password harus di isi!');
-			return false;
-		}
-	}
-
-</script>
+	
 
 </html>

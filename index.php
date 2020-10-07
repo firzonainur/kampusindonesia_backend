@@ -1,18 +1,12 @@
-<?php
-	session_start();
-	if( !isset($_SESSION['username'])=='' AND isset($_SESSION['password'])==''){
-		header("location : login.php");
-	}
-	
-?>
+
 
 <html lang="en">
-    <head>
+	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+		<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
 		<title>Kampus Indoensia</title>
     </head>
     <body>
@@ -20,7 +14,7 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="index.php" class="nav__logo">Kampus Indonesia</a>
+                    <a href="index.php" >Kampus Indonesia</a>
                 </div>
 
             </nav>
