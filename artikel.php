@@ -58,7 +58,7 @@ body {
 <?php while ( $row = mysqli_fetch_assoc($artikelDB)) { ?>
 	<article>
 	<tr>
-		<td><img src="img/<?php echo $row["gambar_artikel"];?>" width="100"></td>
+		<td><center><img src="img/<?php echo $row["gambar_artikel"];?>" width="450" height="300"></center></td>
 	</tr>
 
 	<br>
