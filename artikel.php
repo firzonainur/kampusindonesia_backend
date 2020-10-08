@@ -40,7 +40,7 @@
 	<h2 style="text-align: center;">Upload Artikel</h2>
 	<table class="table table-bordered">
 			<tr>
-				<th width="20%">Foto</th>
+				<th width="20%">Gambar</th>
 				<th width="20%">Judul</th>
 				<th width="60%">Text</th>
 			</tr>
@@ -50,7 +50,7 @@
 			while($d = mysqli_fetch_array($data)){
 				?>
 				<tr>
-					<td><img src="gambar/<?php echo $d['foto'] ?>" width="35" height="40"></td>
+					<td><img src="assets/uploads/<?php echo $d['gambar'] ?>" width="150" height="150"></td>
 					<td><?php echo $d['judul']; ?></td>
 					<td><?php echo $d['text']; ?></td>
 					
