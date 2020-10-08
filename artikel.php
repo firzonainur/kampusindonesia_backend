@@ -1,4 +1,5 @@
-<?php 
+<?php
+	include 'koneksi/koneksi.php';  
 	session_start();
 	if($_SESSION['status']!="login"){
 		header("location:login.php?pesan=belum_login");
@@ -43,6 +44,21 @@
 				<th width="20%">Judul</th>
 				<th width="60%">Text</th>
 			</tr>
+			
+			<?php 
+			$data = mysqli_query($koneksi,"select * from artikel");
+			while($d = mysqli_fetch_array($data)){
+				?>
+				<tr>
+					<td><img src="gambar/<?php echo $d['foto'] ?>" width="35" height="40"></td>
+					<td><?php echo $d['judul']; ?></td>
+					<td><?php echo $d['text']; ?></td>
+					
+				</tr>
+				<?php
+			}
+
+			?>
 			
 		</table>
 
