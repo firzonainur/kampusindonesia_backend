@@ -31,7 +31,7 @@
  <div class="sidebar">
   <div class="nav"></div>
   <a href="dashboard.php"><button class="btnt"><i style="margin-right: 5px" class="fa fa-home">Upload Artikel</i></button><br></a>
-  <a href=""><button class="btnt"><i style="margin-right: 5px" class="fa fa-home">Artikel</i></button><br></a>
+  <a href="artikel.php"><button class="btnt"><i style="margin-right: 5px" class="fa fa-home">Artikel</i></button><br></a>
  
  
  </div>
