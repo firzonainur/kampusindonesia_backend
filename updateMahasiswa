@@ -1,0 +1,44 @@
+<?php
+include 'connection.php';
+$id = $_GET['id'];
+$call = mysqli_query($con, "SELECT * from mahasiswa WHERE nrp = $id");
+$row = mysqli_fetch_array($call);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Data Pengguna</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+				<form method="post" action="updateMahasiswaController.php">
+					<legend>Form Update Pengguna</legend>
+					<input type="text" class="form-control" name="nrp" value="<?php echo $row['nrp'];?>" readonly>
+					<div class="form-group">
+						<label for="">Nama</label>
+						<input type="text" class="form-control" placeholder="nama lengkap" name="nama" value="<?php echo $row['nama'];?>">
+					</div>
+					<div class="form-group">
+						<label for="">Institusi</label>
+						<input type="text" class="form-control" name="institusi" value="<?php echo $row['institusi'];?>" readonly>
+					</div>
+					<div class="form-group">
+						<label for="">Alamat</label>
+						<input type="text" class="form-control" placeholder="alamat sekarang" name="alamat" value="<?php echo $row['alamat'];?>">
+					</div>
+					<div class="form-group">
+						<label for="">Tahun</label>
+						<input type="text" class="form-control" name="tahun" value="<?php echo $row['tahun'];?>" readonly>
+					</div>
+					<button type="submit" class="btn btn-primary">Simpan</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
