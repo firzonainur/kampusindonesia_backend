@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper .navbar {
+	height: 55px;
+}
+.wrapper .navbar .navbar-nav li {
+	padding-right: 10px;
+}
+
+.content-section {
+	height: 600px;
+	background-color: #2A7EFF;
+	color: #FFFFFF;
+}
